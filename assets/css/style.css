@@ -1,0 +1,100 @@
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d9dcd6;
+    background-color: #d9dcd6;
+}
+
+.header {
+    padding: 20px;
+    font-family: 'Helvetica, sans-serif;
+    ;
+    background-color: #e3d8e3;
+    color: #ffffff;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+.header h1 .mtz {
+    color: #837783;
+}
+
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Helvetica', sans-serif;
+    font-size: 20px;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+.card {
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    float: left;
+    width: 25%;
+}
+
+.card header {
+    padding: 20px;
+}
+.card p {
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+} @media screen and (max-width: 992px) {
+    .card {
+    width: 50%;
+    }
+    header {
+    background: #060606;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .card {
+    width: 100%;
+    }
+    header {
+    background: #030303;
+    }
+}
+
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
