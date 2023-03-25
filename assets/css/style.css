@@ -1,10 +1,10 @@
-  * {
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-body {
+.body {
     background-color: #d9dcd6;
     background-color: #d9dcd6;
 }
@@ -12,7 +12,7 @@ body {
 .header {
     padding: 20px;
     font-family: 'Helvetica, sans-serif;
-    ;
+;
     background-color: #e3d8e3;
     color: #ffffff;
 }
@@ -52,12 +52,79 @@ p {
     font-size: 16px;
 }
 
+.landing {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../img/design-space-paper-textured-background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-info {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: left;
+    width: 20%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d9dcd6;
+}
+
+.about-me-style {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:#030303;
+    color: #ffffff;
+}
+
+.contact-info-style {
+    margin-bottom: 32px;
+    color:#ffffff;
+}
+
+.contact-info-style h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12,1fr);
+}
+
 .card {
     border-style: solid;
-    border-width: 1px;
+    background-color:#d9dcd6;
+    border-width: 5px;
+    border-color: #ffffff;
     padding: 10px;
     float: left;
     width: 25%;
+}
+.card-aboutme {
+    border-style: solid;
+    background-color:#d9dcd6;
+    border-color: #ffffff;
+    border-width: 5px;
+    padding: 10px;
+    float: left;
+    width: 100%;
 }
 
 .card header {
@@ -74,7 +141,7 @@ p {
     width: 50%;
     }
     header {
-    background: #060606;
+    background: #837783;
     }
 }
 
@@ -84,17 +151,19 @@ p {
     width: 100%;
     }
     header {
-    background: #030303;
+    background: #837783;
     }
 }
 
 .footer {
     padding: 30px;
     clear: both;
+    background-color: #e3d8e3;
+    color: #ffffff;
     font-family: Helvetica, sans-serif;
     text-align: center;
 }
 
 .footer h2 {
-    font-size: 20px;
+    font-size: 38px;
 }
