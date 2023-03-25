@@ -19,7 +19,8 @@
 
 .header h1 {
     display: inline-block;
-    font-size: 48px;
+    font-size: 40px;
+    font: helvetica;
 }
 
 .header h1 .mtz {
@@ -30,7 +31,7 @@
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Helvetica', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-size: 20px;
 }
 
@@ -41,11 +42,15 @@
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
+    padding-top: 20px;
+    position: relative;
+    
 }
 
-a {
+.header a {
     color: #ffffff;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 p {
@@ -74,10 +79,10 @@ p {
 
 .about-me-style {
     margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color:#030303;
+    padding: 30px;
+    height: 100px;
+    font-family: 'helvetica', sans-serif;
+    background-color: #d9dcd6;
     color: #ffffff;
 }
 
@@ -93,6 +98,8 @@ p {
 
 .row {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: row;
     flex-wrap:wrap;
 }
@@ -100,6 +107,7 @@ p {
 .column {
     display: flex;
     flex-direction: column;
+    flex-basis: content;
 }
 
 .grid {
