@@ -10,57 +10,38 @@
     </head>
     
     <body>
-        <header class="header">
-            <h1>Eunice Damaris <span class="mtz">Martinez-Gonzalez</span></h1>
-            <nav>
+<div class="container">
+    <header class="header">
+        <h1>Eunice Damaris <span class="mtz"> Martinez-Gonzalez</span></h1>
+        <nav> 
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            </nav>
-        </header>   
-        <section class="landing"></section>
-        <section class="body"class="row"class="column"class="grid">
-            <section class="card-aboutme">
-                <article class="about-me-style"></article>
-                <h2>about me</h2>
-                <p>lorem ipsum</p>
-            </section>
-            <section class="card">
-                <header>Project 1</header>
-                <img src="./assets/img/place-holder-img.jpg" alt="image-holder" />
-                <p>description</p>
-            </section>
-            <section class="card">
-                <header>Project 2</header>
-                <img src="./assets/img/place-holder-img.jpg" alt="image-holder" />
-                <p>description</p>
-            </section>
-            <section class="card">
-                <header>Project 3</header>
-                <img src="./assets/img/place-holder-img.jpg" alt="image-holder" />
-                <p>descriptiom</p>
-            </section>
-            <section class="card">
-                <header>Project 4</header>
-                <img src="./assets/img/place-holder-img.jpg" alt="image-holder" />
-                <p>descriptiom</p>
-            </section>
-        <aside class="contact-info" class="card"></aside>
-            <article class="contact-info-style">
-                <h3>contact me</h3>
+            <a href="#contact">About Me</a>
+            <a href="#porfolio">Projects</a>
+            <a href="#sidebar">Contact</a>
+            </ul>   
+        </nav>
+    </header>
+    <main class="about-me-syled">
+        <h2>AboutMe</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis magni cum dicta. Numquam quibusdam sit deserunt velit perferendis officia magnam, asperiores eius, expedita ea, accusamus placeat dicta rem quae?</p>
+    </main>
+    <aside id="sidebar">
+        <article class="contact-info-style">
+            <h3>contact me</h3>
                 <li>website</li>
+                <li>linkedin</li>
                 <li>email</li>
                 <li>github</li>
                 <li>phone</li>
-            </article>
-            
+        </article>
+    </aside>
+    <div id="porfolio">
+        <div style="width: 748px; flex: 2; border: 1px solid red;" class="card"></div>
 
-        </aside> 
-        </section>
-            <footer class="footer">
-                <p>Thanks for visiting!</p>
-            </footer>
-    </body>
-</html>
+        <div style="width: 200px; flex: 1; border: 1px solid blue;" ></div>
+    </div>
+</div>
+    
+    <footer id="footer">Thanks for visiting!</footer>
+
+</body>
