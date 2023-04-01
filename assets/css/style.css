@@ -12,11 +12,11 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: .8fr 1.5fr 1.5fr 1.8fr;
+    grid-template-rows: .8fr 1.5fr 1.5fr .4fr;
     grid-template-areas: "nav nav nav nav"
-    "sidebar aboutme aboutme aboutme"
-    "sidebar porfolio porfolio porfolio "
     "sidebar porfolio porfolio porfolio"
+    "sidebar porfolio porfolio porfolio "
+    "sidebar contact contact contact"
     "footer footer footer footer";
     grid-gap: 0.2rem;
     font-family: Helvetica, sans-serif;
@@ -68,17 +68,8 @@ header nav {
 }
 
 p {
-    font-size: 14px;
-}
-
-.aboutme {
-    font-family: 'Helvetica', sans-serif;
-    padding-top: 20px;
-    font-size: large;
-    color: #ffffff;
-    background: #6B8A87;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: initial;
+    padding-top: 10px;
+    font-size: 20px;
 }
 
 .avatar {
@@ -99,17 +90,6 @@ p {
     color: #ffffff;
 }
 
-.contact-info-style {
-    background: #486970;
-    grid-area: sidebar;
-    font-family: 'Helvetica', sans-serif;
-    font-size: large;
-    float: right;
-    color: #ffffff;
-
-}
-
-
 
 #porfolio {
     background: #95AB9E;
@@ -118,11 +98,6 @@ p {
     flex-direction: column;
 }
 
-.porfoliocontainer {
-    width: 100px;
-    flex: 2;
-    border: dodgerblue;
-}
 
 .card {
     display: flex;
@@ -138,7 +113,8 @@ p {
     border-color: #ffffff;
     padding: 10px;
     float: left;
-    width: 25%;
+    width: 100%;
+    
 }
 
 .card header {
@@ -155,6 +131,20 @@ p {
 
 }
 
+#contact {
+    background: #95AB9E;
+    grid-area: contact;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+
+}
 
 #footer{
     background: #2F4858;
@@ -167,46 +157,15 @@ p {
 @media only screen and (max-width: 780px) {
     .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1.5fr 1.5fr 2.5fr ;
+    grid-template-rows: 0.5fr 1.5fr 2.5fr 2.5fr  ;
     grid-template-areas: "nav"
-    "aboutme"
-    "sidebar"
     "porfolio"
+    "porfolio"
+    "sidebar"
+    "contact"
     "footer";
     }
     header {
     background: #2F4858;
     }
-}
-
-
-@media screen and (max-width: 992px) {
-    .card {
-    width: 50%;
-    }
-    header {
-    background: #C2CCBA;
-    }
-}
-
-
-@media screen and (max-width: 768px) {
-    .card {
-    width: 100%;
-    }
-    header {
-    background: #C2CCBA;
-    }
-}
-
-.footer {
-    grid-column: 1 / 3;
-    grid-row: 3;
-    padding: 40px;
-    font-size: 36px;
-    clear: both;
-    background-color: #e3d8e3;
-    color: #ffffff;
-    font-family: Helvetica, sans-serif;
-    text-align: center;
 }
