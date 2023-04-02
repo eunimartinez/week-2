@@ -37,7 +37,7 @@ header {
     color: azure;
 }
 header h1 .mtz  {
-        color: #2F4858;
+        color: #6B8A87;
 }
 header nav {
     display: flex;
@@ -59,6 +59,11 @@ header nav {
     padding-top: 10px;
     position: relative;
     
+}
+
+nav a:hover {
+    background-color: var(--white);
+    color: var(--dark-blue);
 }
 
 .header a {
@@ -86,7 +91,7 @@ p {
     background: #486970;
     grid-area: sidebar;
     font-family: 'Helvetica', sans-serif;
-    font-size: large;
+    font-size: medium;
     color: #ffffff;
 }
 
@@ -114,7 +119,18 @@ p {
     padding: 10px;
     float: left;
     width: 100%;
+    height: auto;
     
+}
+
+.card-box {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    background: #C2CCBA ;
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
 }
 
 .card header {
@@ -126,8 +142,8 @@ p {
 }
 
 .image {
-    height: 300px;
-    width: 600px;
+    height: 100px;
+    width: 100px;
 
 }
 
@@ -142,8 +158,6 @@ p {
     text-decoration: none;
     padding-top: 10px;
     padding-bottom: 5px;
-
-
 }
 
 #footer{
